@@ -7,6 +7,8 @@
 
 import Foundation
 
+let four: Int = 4
+
 print("참여 인원 입력")
 let input = readLine() ?? ""
 ladderGame(input: Int(input) ?? 0)
@@ -16,7 +18,7 @@ func ladderGame(input: Int) {
     if input < 2 || input > 8 {
         printGameOver()
     } else {
-        printLadder(array: makeLadder(peopleNum: input, ladderHeight: 4))
+        printLadder(array: makeLadder(peopleNum: input, ladderHeight: four))
     }
     
     func printGameOver() {
