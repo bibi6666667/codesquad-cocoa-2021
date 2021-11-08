@@ -39,3 +39,42 @@ struct ArrayPractice {
         return result
     }
 }
+
+// 미션 2 - setBoolArray, printArray
+struct BoolArray {
+    
+    let num = 7
+    
+    func printArray(array: Array<Array<Bool>>, newChar: Character) {
+        for innerArray in array {
+            for item in innerArray {
+                if item {
+                    print(newChar, terminator: "")
+                } else {
+                    print(" ", terminator: "")
+                }
+            }
+            print()
+        }
+    }
+    
+    func setBoolArray() -> Array<Array<Bool>> {
+        var resultArray = Array<Array<Bool>>()
+        for i in 1...num {
+            var tempArray = Array<Bool>()
+            if i == num {
+                tempArray = Array<Bool>(repeating: true, count: num)
+            } else {
+                for _ in 1...(num - i) {
+                    tempArray.append(false)
+                }
+                for _ in 1...i {
+                    tempArray.append(true)
+                }
+            }
+            
+            resultArray.append(tempArray)
+        }
+        return resultArray
+    }
+}

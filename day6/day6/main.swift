@@ -7,6 +7,10 @@
 
 import Foundation
 
-var myArray = ArrayPractice()
-myArray.printArray(array: myArray.fillArray())
+// 1-1
+//var myArray = ArrayPractice()
+//myArray.printArray(array: myArray.fillArray())
 
+// 1-2
+var boolArray = BoolArray()
+boolArray.printArray(array: boolArray.setBoolArray(), newChar: "$")
