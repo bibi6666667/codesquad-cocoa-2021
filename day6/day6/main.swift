@@ -12,5 +12,9 @@ import Foundation
 //myArray.printArray(array: myArray.fillArray())
 
 // 1-2
-var boolArray = BoolArray()
-boolArray.printArray(array: boolArray.setBoolArray(), newChar: "$")
+//var boolArray = BoolArray()
+//boolArray.printArray(array: boolArray.setBoolArray(), newChar: "$")
+
+// 4
+print(residentRegistrationNumberValidityCheck(residentRegistrationNumber: "1234561234567"))
+
