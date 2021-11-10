@@ -22,16 +22,16 @@ struct ArrayPractice {
     
     func fillArray() -> Array<Array<Int>> {
         var result = Array<Array<Int>>()
-        var currentNum = 1
+        var numberToPrint = 1
         for i in 1...num * num {
             var tempArr = Array<Int>()
-            if i % 5 == 1 {
-                for j in 1...currentNum {
+            if i % num == 1 {
+                for j in 1...numberToPrint {
                     let appendNum = i + j - 1
                     tempArr.append(appendNum)
                 }
                 result.append(tempArr)
-                currentNum += 1
+                numberToPrint += 1
             } else {
                 continue
             }
@@ -76,5 +76,19 @@ struct BoolArray {
             resultArray.append(tempArray)
         }
         return resultArray
+    }
+}
+
+// 미션 3 - 마방진
+struct MagicSquare {
+    func printMagicSquare(array: Array<Array<Int>>) {
+        
+    }
+    
+    func makeMagicSquare(row: Int) -> Array<Array<Int>> {
+        var result = Array<Array<Int>>()
+        
+        
+        return result
     }
 }

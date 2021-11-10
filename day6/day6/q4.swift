@@ -7,10 +7,10 @@
 
 import Foundation
 
-func residentRegistrationNumberValidityCheck(residentRegistrationNumber: String) -> Bool {
+func residentRegistrationNumberValidityCheck(rrnumber: String) -> Bool {
     var splitArray = [Character]()
-    for i in 0..<residentRegistrationNumber.count {
-        splitArray.append(residentRegistrationNumber[residentRegistrationNumber.index(residentRegistrationNumber.startIndex, offsetBy: i)])
+    for i in 0..<rrnumber.count {
+        splitArray.append(rrnumber[rrnumber.index(rrnumber.startIndex, offsetBy: i)])
     }
     var splitIntArray: [Int] = splitArray.map{ Int(String($0)) ?? 0 }
     let calculatedNumberArray: [Int] = [splitIntArray[0] * 2,

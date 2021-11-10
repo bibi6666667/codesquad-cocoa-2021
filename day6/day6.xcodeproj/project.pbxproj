@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		00F8A4EC2738B69C00DC4DA1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F8A4EB2738B69C00DC4DA1 /* main.swift */; };
 		00F8A4F32738BCD400DC4DA1 /* q1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F8A4F22738BCD400DC4DA1 /* q1.swift */; };
+		00F8A4F52738F25100DC4DA1 /* q2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F8A4F42738F25100DC4DA1 /* q2.swift */; };
+		00F8A4F72738F56B00DC4DA1 /* q4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F8A4F62738F56B00DC4DA1 /* q4.swift */; };
+		00F8A4F92739098300DC4DA1 /* q5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F8A4F82739098300DC4DA1 /* q5.swift */; };
+		00F8A4FB273914B400DC4DA1 /* q6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F8A4FA273914B400DC4DA1 /* q6.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +31,10 @@
 		00F8A4E82738B69C00DC4DA1 /* day6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = day6; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F8A4EB2738B69C00DC4DA1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		00F8A4F22738BCD400DC4DA1 /* q1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = q1.swift; sourceTree = "<group>"; };
+		00F8A4F42738F25100DC4DA1 /* q2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = q2.swift; sourceTree = "<group>"; };
+		00F8A4F62738F56B00DC4DA1 /* q4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = q4.swift; sourceTree = "<group>"; };
+		00F8A4F82739098300DC4DA1 /* q5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = q5.swift; sourceTree = "<group>"; };
+		00F8A4FA273914B400DC4DA1 /* q6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = q6.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,10 @@
 			children = (
 				00F8A4EB2738B69C00DC4DA1 /* main.swift */,
 				00F8A4F22738BCD400DC4DA1 /* q1.swift */,
+				00F8A4F42738F25100DC4DA1 /* q2.swift */,
+				00F8A4F62738F56B00DC4DA1 /* q4.swift */,
+				00F8A4F82739098300DC4DA1 /* q5.swift */,
+				00F8A4FA273914B400DC4DA1 /* q6.swift */,
 			);
 			path = day6;
 			sourceTree = "<group>";
@@ -123,7 +135,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F8A4F72738F56B00DC4DA1 /* q4.swift in Sources */,
 				00F8A4EC2738B69C00DC4DA1 /* main.swift in Sources */,
+				00F8A4F92739098300DC4DA1 /* q5.swift in Sources */,
+				00F8A4F52738F25100DC4DA1 /* q2.swift in Sources */,
+				00F8A4FB273914B400DC4DA1 /* q6.swift in Sources */,
 				00F8A4F32738BCD400DC4DA1 /* q1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
