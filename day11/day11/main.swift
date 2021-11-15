@@ -14,5 +14,9 @@ import Foundation
 //print(result.a, result.b, result.c, result.d)
 
 // 연습 2 특별한 이진수 - 출력 형태가 조금 다릅니다:(
-let binaryNumber = BinaryNumber.init(with: 5)
-print(binaryNumber.find(by: 3))
+//let binaryNumber = BinaryNumber.init(with: 5)
+//print(binaryNumber.find(by: 3))
+
+// 연습 3 버블 정렬
+let bubbleSort = BubbleSort(array: [10, 18, 9, 3, 5, 8, 7, 15, 1, 6, 4 ])
+print(bubbleSort.sorted(isAscending: true))

@@ -10,6 +10,7 @@
 		00F660022741EF360035CF61 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F660012741EF360035CF61 /* main.swift */; };
 		00F660092741F1BC0035CF61 /* p1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F660082741F1BC0035CF61 /* p1.swift */; };
 		00F6600B27422A5E0035CF61 /* p2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F6600A27422A5E0035CF61 /* p2.swift */; };
+		00F6600D27423BFE0035CF61 /* p3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F6600C27423BFE0035CF61 /* p3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		00F660012741EF360035CF61 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		00F660082741F1BC0035CF61 /* p1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = p1.swift; sourceTree = "<group>"; };
 		00F6600A27422A5E0035CF61 /* p2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = p2.swift; sourceTree = "<group>"; };
+		00F6600C27423BFE0035CF61 /* p3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = p3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				00F660012741EF360035CF61 /* main.swift */,
 				00F660082741F1BC0035CF61 /* p1.swift */,
 				00F6600A27422A5E0035CF61 /* p2.swift */,
+				00F6600C27423BFE0035CF61 /* p3.swift */,
 			);
 			path = day11;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			files = (
 				00F660092741F1BC0035CF61 /* p1.swift in Sources */,
 				00F6600B27422A5E0035CF61 /* p2.swift in Sources */,
+				00F6600D27423BFE0035CF61 /* p3.swift in Sources */,
 				00F660022741EF360035CF61 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
