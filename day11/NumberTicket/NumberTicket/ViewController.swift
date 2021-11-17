@@ -11,19 +11,25 @@ import UIKit
 class ViewController: UIViewController {
 
     var waitingNumber: Int = 0 {
-        didSet(oldValue) {
-            if waitingNumber == 0 {
+        didSet { // 프로퍼티 감시자
+            waitingNumberLabel.text = "\(waitingNumber)명"
+            
+            switch waitingNumber {
+            case 0 :
+                waitingProgressBar.progress = 0.0
                 waitButton.isEnabled = true
                 doneButton.isEnabled = false
-            }
-            if waitingNumber > 0 && waitingNumber < 20 {
-                waitingProgressBar.progressTintColor = UIColor.systemGray
-                waitingProgressBar.progress = (Float(waitingNumber) / 20)
+            case 1...19 :
+                waitingProgressBar.progressTintColor = UIColor.systemBlue
+                waitingProgressBar.setProgress(Float(waitingNumber) / 20.0, animated: true) // 이게 더 좋다.
                 waitButton.isEnabled = true
                 doneButton.isEnabled = true
-            }
-            if waitingNumber == 20 {
+            case 20 :
+                waitingProgressBar.setProgress(1.0, animated: false)
                 waitingProgressBar.progressTintColor = UIColor.systemRed
+                waitButton.isEnabled = false
+                doneButton.isEnabled = true
+            default :
                 waitButton.isEnabled = false
                 doneButton.isEnabled = true
             }
@@ -38,20 +44,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         doneButton.isEnabled = false
-        if waitingNumber >= 1 {
-            doneButton.isEnabled = true
-        }
         // Do any additional setup after loading the view.
     }
 
     @IBAction func wait(_ sender: Any) {
         waitingNumber += 1
-        waitingNumberLabel.text = "\(waitingNumber)명"
     }
     
     @IBAction func done(_ sender: Any) {
         waitingNumber -= 1
-        waitingNumberLabel.text = "\(waitingNumber)명"
     }
     
 }

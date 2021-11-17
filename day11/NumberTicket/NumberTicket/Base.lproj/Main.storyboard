@@ -30,9 +30,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Upr-NQ-3Zm">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Upr-NQ-3Zm">
                                 <rect key="frame" x="71" y="240" width="232" height="4"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPv-WL-x98">
                                 <rect key="frame" x="71" y="269" width="101" height="57"/>
@@ -58,7 +59,7 @@
                     </view>
                     <connections>
                         <outlet property="doneButton" destination="7yr-2f-kM1" id="JD3-Ii-iZg"/>
-                        <outlet property="waitButton" destination="7yr-2f-kM1" id="E2s-yO-8cm"/>
+                        <outlet property="waitButton" destination="dPv-WL-x98" id="OB4-eJ-3m5"/>
                         <outlet property="waitingNumberLabel" destination="4bb-mX-95U" id="hpn-NM-5tj"/>
                         <outlet property="waitingProgressBar" destination="Upr-NQ-3Zm" id="FWL-rW-bVd"/>
                     </connections>

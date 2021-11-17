@@ -23,10 +23,9 @@ class BubbleSort {
             let tempItem = copyIntArray[aIndex]
             copyIntArray[aIndex] = copyIntArray[bIndex]
             copyIntArray[bIndex] = tempItem
-            
         }
         
-        for i in 1...copyIntArray.count {
+        for i in 1...copyIntArray.count { //
             for j in 0..<copyIntArray.count - 1 {
                 print(copyIntArray[j], copyIntArray[j + 1])
                 if isAscending {

@@ -19,4 +19,4 @@ import Foundation
 
 // 연습 3 버블 정렬
 let bubbleSort = BubbleSort(array: [10, 18, 9, 3, 5, 8, 7, 15, 1, 6, 4 ])
-print(bubbleSort.sorted(isAscending: true))
+print(bubbleSort.sorted(isAscending: true)) // 오름차순으로 정렬해라
