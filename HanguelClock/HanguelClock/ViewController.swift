@@ -115,11 +115,13 @@ class ViewController: UIViewController {
             아.textColor = UIColor.systemBlue
             홉.textColor = UIColor.systemBlue
         case 10, 22:
-            한.textColor = UIColor.systemBlue
+            열.textColor = UIColor.systemBlue
         case 11, 23:
+            열.textColor = UIColor.systemBlue
             한.textColor = UIColor.systemBlue
         case 12, 24:
-            한.textColor = UIColor.systemBlue
+            열.textColor = UIColor.systemBlue
+            두.textColor = UIColor.systemBlue
         default:
             영.textColor = UIColor.systemBlue // ?? 쓸 일이 없음..
         }
@@ -201,7 +203,7 @@ class ViewController: UIViewController {
         case 8 :
             초_일의자리.text = "팔초"
         case 9 :
-            초_일의자리.text = "구초"
+            초_일의자리.text = "구초 \n"
         default:
             초_일의자리.text = "초"
         }
