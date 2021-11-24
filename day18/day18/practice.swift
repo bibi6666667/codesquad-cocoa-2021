@@ -12,7 +12,6 @@ func displayAllFiles(at path: String) {
     
     do {
         let contents = try fileManager.contentsOfDirectory(atPath: path)
-        print(contents)
     } catch let error as NSError {
         print("Error access directory: \(error)")
     }

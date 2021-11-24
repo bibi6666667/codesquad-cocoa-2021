@@ -8,6 +8,10 @@
 import Foundation
 
 let path = "/Users/bibi/test"
-displayAllFiles(at: path)
-
+let contents = files(at: path)
+print(contents)
+print(sortNameAscending(files: contents))
+print(isExist(filename: "abc", at: path))
+print(isExist(filename: "abc", "cocoa", "kakao", "baskin", "iOS", "xcode", at: path))
+print(findFiles(fileExtension: .txt, at: path))
 
