@@ -40,12 +40,18 @@ class ViewController: UIViewController,
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) { // 셀 선택되었을 때 실행 - 상세페이지로 넘어가기
         print(indexPath.row)
         
-        let detailViewController = DetailViewController()
-        // DetailViewController에 보내 줄 아이스크림 정보 만들기?
-        self.present(detailViewController, animated: false, completion: nil) // completion : 다 실행된 후에 할 동작?
+        self.performSegue(withIdentifier: "DetailSegue", sender: self)
+//        let detailViewController = DetailViewController()
+//        // DetailViewController에 보내 줄 아이스크림 정보 만들기?
+//        self.present(detailViewController, animated: false, completion: nil) // completion : 다 실행된 후에 할 동작?
         // 1. Segue
         // 2. xib 파일로 - 제제추천
     }
+    
+    @IBAction func goBackToMainView(_ segue: UIStoryboardSegue) {
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
