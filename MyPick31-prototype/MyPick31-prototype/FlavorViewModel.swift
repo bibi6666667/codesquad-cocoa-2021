@@ -21,7 +21,7 @@ class FlavorViewModel {
             return flavorList[id]
         }
         
-        func setFlavorInfo() {
+        func setFlavorList() {
             let dataPathURL = URL(fileURLWithPath: flavorFilePath).appendingPathComponent(flavorFileName)
             var dataContent = ""
             do {

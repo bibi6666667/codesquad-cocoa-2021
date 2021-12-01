@@ -87,6 +87,13 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MyPick31🍨" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgM-4x-yAl">
+                                <rect key="frame" x="129" y="54" width="137" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BMHANNA11yrsoldOTF" family="BM Hanna 11yrs Old" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -182,6 +189,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="MFn-e4-1e2"/>
+                    <connections>
+                        <outlet property="allergen" destination="vJg-2b-gID" id="k8H-jA-4Ii"/>
+                        <outlet property="base" destination="oWb-fi-efQ" id="owD-cU-cPF"/>
+                        <outlet property="image" destination="sjT-am-4Hc" id="7bc-gE-qya"/>
+                        <outlet property="kcal" destination="qS5-14-jmz" id="q0d-Oh-2nn"/>
+                        <outlet property="nameEN" destination="CJC-Fq-xWu" id="RcI-H9-a9f"/>
+                        <outlet property="nameKR" destination="qEH-sa-pvh" id="phz-kx-70r"/>
+                        <outlet property="syrup" destination="VMB-DP-HRh" id="89k-h9-syv"/>
+                        <outlet property="topping" destination="oUj-aR-1co" id="mZd-xO-rwp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hDh-Zs-qCV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Q0a-nv-Bd3" userLabel="Exit" sceneMemberID="exit"/>

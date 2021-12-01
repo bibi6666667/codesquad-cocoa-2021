@@ -15,6 +15,8 @@ class ViewController: UIViewController,
     @IBOutlet weak var flavorCollectionView: UICollectionView!
     // 컬렉션뷰에 델리게이트랑 데이터소스가 필요함.
     
+    var flavorToSend = Flavor()
+    var currentIndex = 0
     
     let flavorViewModel = FlavorViewModel() // 뷰모델 변수 추가
     
@@ -40,12 +42,21 @@ class ViewController: UIViewController,
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) { // 셀 선택되었을 때 실행 - 상세페이지로 넘어가기
         print(indexPath.row)
         
+        flavorToSend = flavorViewModel.getFlavorWithId(id: indexPath.row)
+        
         self.performSegue(withIdentifier: "DetailSegue", sender: self)
-//        let detailViewController = DetailViewController()
-//        // DetailViewController에 보내 줄 아이스크림 정보 만들기?
+        
 //        self.present(detailViewController, animated: false, completion: nil) // completion : 다 실행된 후에 할 동작?
-        // 1. Segue
-        // 2. xib 파일로 - 제제추천
+    }
+    
+    // 특정 세그웨이 연결 시 실행되는 준비 메서드
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DetailSegue" {
+            let detailVC = segue.destination as! DetailViewController
+            print(flavorToSend.nameKR, flavorToSend.base)
+            detailVC.setCurrentFlavorData(flavor: flavorToSend)
+            
+        }
     }
     
     @IBAction func goBackToMainView(_ segue: UIStoryboardSegue) {
@@ -60,7 +71,7 @@ class ViewController: UIViewController,
         // UICollectionViewDataSource를 채택했기 때문에 가능
         self.flavorCollectionView.delegate = self
         // UICollectionViewDelegate를 채택했기 때문에 가능
-        flavorViewModel.setFlavorInfo()
+        flavorViewModel.setFlavorList()
     }
     
 }
