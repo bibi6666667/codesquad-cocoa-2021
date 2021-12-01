@@ -14,6 +14,9 @@
 		005E73012754B416006765F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005E73002754B416006765F1 /* Assets.xcassets */; };
 		005E73042754B416006765F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005E73022754B416006765F1 /* LaunchScreen.storyboard */; };
 		00A435802754C74D00915F7C /* Flavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A4357F2754C74D00915F7C /* Flavor.swift */; };
+		00A55257275716FA005FDB9B /* FlavorImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A55256275716F9005FDB9B /* FlavorImageInfo.swift */; };
+		00A552592757174F005FDB9B /* FlavorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A552582757174F005FDB9B /* FlavorCell.swift */; };
+		00A5525B275717B9005FDB9B /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A5525A275717B9005FDB9B /* ImageViewModel.swift */; };
 		00A9B1142756276B005B7158 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A9B1122756276B005B7158 /* DetailViewController.swift */; };
 		00A9B1152756276B005B7158 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A9B1132756276B005B7158 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
@@ -28,6 +31,9 @@
 		005E73032754B416006765F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		005E73052754B416006765F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00A4357F2754C74D00915F7C /* Flavor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flavor.swift; sourceTree = "<group>"; };
+		00A55256275716F9005FDB9B /* FlavorImageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavorImageInfo.swift; sourceTree = "<group>"; };
+		00A552582757174F005FDB9B /* FlavorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavorCell.swift; sourceTree = "<group>"; };
+		00A5525A275717B9005FDB9B /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
 		00A9B1122756276B005B7158 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		00A9B1132756276B005B7158 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +72,9 @@
 				005E72F92754B414006765F1 /* SceneDelegate.swift */,
 				005E72FB2754B414006765F1 /* ViewController.swift */,
 				00A4357F2754C74D00915F7C /* Flavor.swift */,
+				00A55256275716F9005FDB9B /* FlavorImageInfo.swift */,
+				00A552582757174F005FDB9B /* FlavorCell.swift */,
+				00A5525A275717B9005FDB9B /* ImageViewModel.swift */,
 				005E73002754B416006765F1 /* Assets.xcassets */,
 				005E72FD2754B414006765F1 /* Main.storyboard */,
 				005E73022754B416006765F1 /* LaunchScreen.storyboard */,
@@ -149,9 +158,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				005E72FC2754B414006765F1 /* ViewController.swift in Sources */,
+				00A552592757174F005FDB9B /* FlavorCell.swift in Sources */,
+				00A55257275716FA005FDB9B /* FlavorImageInfo.swift in Sources */,
 				00A435802754C74D00915F7C /* Flavor.swift in Sources */,
 				00A9B1142756276B005B7158 /* DetailViewController.swift in Sources */,
 				005E72F82754B414006765F1 /* AppDelegate.swift in Sources */,
+				00A5525B275717B9005FDB9B /* ImageViewModel.swift in Sources */,
 				005E72FA2754B414006765F1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
