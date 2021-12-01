@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,15 +14,98 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyPick31_prototype" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7yg-Sl-c9h">
+                                <rect key="frame" x="15" y="109" width="360" height="701"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TGz-cP-8pe">
+                                    <size key="itemSize" width="180" height="250"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Ipn-5X-jwM" customClass="FlavorCell" customModule="MyPick31_prototype" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="0.0" width="180" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="h4s-yR-Cd4">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="250"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ESb-Y3-nrO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="200"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="시그니처" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Jh-LG-C62">
+                                                    <rect key="frame" x="8" y="8" width="52" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" red="0.40226724584537632" green="0.7803921568627451" blue="0.41434988963581859" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vanilla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxP-Vb-X6S">
+                                                    <rect key="frame" x="68.666666666666671" y="227" width="43" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="판매중" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NL4-sF-4AA">
+                                                    <rect key="frame" x="133" y="8" width="39" height="18"/>
+                                                    <color key="backgroundColor" red="0.16855351087009138" green="0.36318807214672549" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="바닐라" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lP-29-NAs">
+                                                    <rect key="frame" x="57.666666666666657" y="192" width="65" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ESb-Y3-nrO" firstAttribute="leading" secondItem="h4s-yR-Cd4" secondAttribute="leading" id="1zj-ia-li1"/>
+                                                <constraint firstAttribute="bottom" secondItem="ESb-Y3-nrO" secondAttribute="bottom" constant="50" id="4Uh-3a-SZF"/>
+                                                <constraint firstItem="zxP-Vb-X6S" firstAttribute="top" secondItem="1lP-29-NAs" secondAttribute="bottom" constant="5" id="8eI-5X-dMX"/>
+                                                <constraint firstAttribute="trailing" secondItem="NL4-sF-4AA" secondAttribute="trailing" constant="8" id="Whg-dO-7BV"/>
+                                                <constraint firstItem="ESb-Y3-nrO" firstAttribute="top" secondItem="h4s-yR-Cd4" secondAttribute="top" id="bLM-i8-3hK"/>
+                                                <constraint firstAttribute="bottom" secondItem="zxP-Vb-X6S" secondAttribute="bottom" constant="5" id="d6Q-lG-utE"/>
+                                                <constraint firstItem="1lP-29-NAs" firstAttribute="centerX" secondItem="h4s-yR-Cd4" secondAttribute="centerX" id="dTn-Jb-OW5"/>
+                                                <constraint firstItem="zxP-Vb-X6S" firstAttribute="centerX" secondItem="h4s-yR-Cd4" secondAttribute="centerX" id="oRK-2w-NmW"/>
+                                                <constraint firstAttribute="trailing" secondItem="ESb-Y3-nrO" secondAttribute="trailing" id="otQ-Ga-6wA"/>
+                                                <constraint firstItem="NL4-sF-4AA" firstAttribute="top" secondItem="h4s-yR-Cd4" secondAttribute="top" constant="8" id="tFs-ZM-c54"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="180" height="250"/>
+                                        <connections>
+                                            <outlet property="image" destination="ESb-Y3-nrO" id="TpO-5N-uJt"/>
+                                            <outlet property="nameEN" destination="zxP-Vb-X6S" id="H22-qp-CNu"/>
+                                            <outlet property="nameKR" destination="1lP-29-NAs" id="6Y8-pg-13q"/>
+                                            <outlet property="onSaleOrNot" destination="NL4-sF-4AA" id="gf4-1o-PPU"/>
+                                            <outlet property="signatureOrSeason" destination="1Jh-LG-C62" id="1Nw-YW-xIY"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7yg-Sl-c9h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="7bY-s7-1mx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7yg-Sl-c9h" secondAttribute="trailing" constant="15" id="jo5-4Q-r9v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7yg-Sl-c9h" secondAttribute="bottom" id="sEl-Dl-ImO"/>
+                            <constraint firstItem="7yg-Sl-c9h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="yDj-ou-oOT"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="flavorCollectionView" destination="7yg-Sl-c9h" id="eCT-qL-r8F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="84"/>
+            <point key="canvasLocation" x="20" y="83.886255924170612"/>
         </scene>
     </scenes>
     <resources>
