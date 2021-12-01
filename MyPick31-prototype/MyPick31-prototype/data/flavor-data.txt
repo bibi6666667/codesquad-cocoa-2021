@@ -1,21 +1,20 @@
-id / name_KR / name_EN / base / topping / syrup / image
-1 / 바닐라 / vanilla / 바닐라 /  /  / 
-2 / 초콜릿 / chocolate / 초콜릿 /  /  / 
-3 / 31요거트 / 31yogurt / 요거트 /  /  /
-4 / 그린티 / green tea / 녹차 /  /  / 
-5 / 레인보우 샤베트 / rainbow sherbet / 
-6 / 체리쥬빌레 / cherries jubilee / 체리 / 체리 /  / 
-7 / 엄마는 외계인 / Puss In Boots / 다크 초콜릿, 밀크 초콜릿, 화이트 무스 / 초코 프레첼볼, 초콜릿칩 /  / 
-8 / 민트 초콜릿 칩 / mint chocolate chip / 민트 / 초콜릿 칩 /  / 
-9 / 아몬드 봉봉 / almond bonbon / 바닐라 / 초코 코팅 아몬드 / 초콜릿 / 
-10 / 오레오 쿠키 앤 크림 / Oreo cookies'n cream / 바닐라 / 오레오 쿠키 / / 
-11 / 초콜릿 무스 / chocolate mousse / 초콜릿 / 초콜릿 / / 
-12 / 슈팅스타 / shooting star / 블루베리, 바닐라 / 팝핑 캔디, 스프링클 / 체리 /
-13 / 뉴욕 치즈케이크 / New York cheesecake / 치즈 / 그라함 쿠키 /  / 
-14 / 이상한 나라의 솜사탕 / cotton candy wonderland / 솜사탕 / 팝핑 캔디, 옐로우 크런치 / / 
-15 / 베리베리 스트로베리 / very berry strawberry / 딸기 / 딸기 /  / 
-16 / 사랑에 빠진 딸기 / love struck strawberry / 딸기치즈 / 딸기, 크런치 초콜릿, 치즈케이크 /  / 
-17 / 바람과 함께 사라지다 / twinberry cheesecake / 치즈 / 치즈케이크 / 딸기, 블루베리 / 
-18 / 피스타치오 아몬드 / pistachio almond / 피스타치오 / 아몬드 /  / 
-19 / 자모카 아몬드 훠지 / Jamoca almond fudge / 자모카 / 아몬드 / 초콜릿 훠지 / 
-20 / 월넛 / walnut / 호두 / 호두 /  / 
+1 / 바닐라 / vanilla / 바닐라 /  /  / 246 / 우유
+2 / 초콜릿 / chocolate / 초콜릿 /  /  / 274 / 우유
+3 / 31요거트 / 31yogurt / 요거트 /  /  / 193 / 우유
+4 / 그린티 / green tea / 녹차 /  /  / 220 / 우유
+5 / 레인보우 샤베트 / rainbow sherbet / 라즈베리 샤베트, 오렌지 샤베트, 파인애플 샤베트 /  /  / 162 / 우유
+6 / 체리쥬빌레 / cherries jubilee / 체리 / 체리 /  / 236 / 우유
+7 / 엄마는 외계인 / Puss In Boots / 다크 초콜릿, 밀크 초콜릿, 화이트 무스 / 초코 프레첼볼, 초콜릿칩 /  / 296 / 우유,밀,대두
+8 / 민트 초콜릿 칩 / mint chocolate chip / 민트 / 초콜릿 칩 /  / 259 / 우유,대두
+9 / 아몬드 봉봉 / almond bonbon / 바닐라 / 초코 코팅 아몬드 / 초콜릿 / 300 / 우유,대두
+10 / 오레오 쿠키 앤 크림 / Oreo cookies'n cream / 바닐라 / 오레오 쿠키 / / 228 / 우유,밀,대두
+11 / 초콜릿 무스 / chocolate mousse / 초콜릿 / 초콜릿 / / 280 / 우유,대두
+12 / 슈팅스타 / shooting star / 블루베리, 바닐라 / 팝핑 캔디, 스프링클 / 체리 / 334 / 우유, 대두, 밀
+13 / 뉴욕 치즈케이크 / New York cheesecake / 치즈 / 그라함 쿠키 /  / 295 / 우유,밀,대두
+14 / 이상한 나라의 솜사탕 / cotton candy wonderland / 솜사탕 / 팝핑 캔디, 옐로우 크런치 / / 287 / 우유, 대두
+15 / 베리베리 스트로베리 / very berry strawberry / 딸기 / 딸기 /  / 228 / 우유
+16 / 사랑에 빠진 딸기 / love struck strawberry / 딸기치즈 / 딸기, 크런치 초콜릿, 치즈케이크 /  / 292 / 우유,밀,대두,계란,땅콩
+17 / 바람과 함께 사라지다 / twinberry cheesecake / 치즈 / 치즈케이크 / 딸기, 블루베리 / 269 / 우유,밀,대두,계란
+18 / 피스타치오 아몬드 / pistachio almond / 피스타치오 / 아몬드 /  / 302 / 우유
+19 / 자모카 아몬드 훠지 / Jamoca almond fudge / 자모카 / 아몬드 / 초콜릿 훠지 / 273 / 우유
+20 / 월넛 / walnut / 호두 / 호두 /  / 276 / 우유,호두
