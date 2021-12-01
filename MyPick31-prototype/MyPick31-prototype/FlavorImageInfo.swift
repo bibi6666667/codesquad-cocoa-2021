@@ -10,13 +10,15 @@ import UIKit
 
 struct FlavorImageInfo {
     let nameKR: String
+    let nameEN: String
     
     var image: UIImage? {
     return self.resizeImage(image: UIImage(named: "\(nameKR)")!, targetSize: CGSize(width: 170.0, height: 170.0)) // Assets에 있는 이미지 이름 지정해 불러오기.
     }
     
-    init(nameKR: String) {
+    init(nameKR: String, nameEN: String) {
         self.nameKR = nameKR
+        self.nameEN = nameEN
     }
     
     func resizeImage(image: UIImage, targetSize: CGSize) -> UIImage? { // 이미지 크기를 조정해 주는 함수?

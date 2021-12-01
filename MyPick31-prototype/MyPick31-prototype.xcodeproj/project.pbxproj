@@ -16,9 +16,10 @@
 		00A435802754C74D00915F7C /* Flavor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A4357F2754C74D00915F7C /* Flavor.swift */; };
 		00A55257275716FA005FDB9B /* FlavorImageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A55256275716F9005FDB9B /* FlavorImageInfo.swift */; };
 		00A552592757174F005FDB9B /* FlavorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A552582757174F005FDB9B /* FlavorCell.swift */; };
-		00A5525B275717B9005FDB9B /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A5525A275717B9005FDB9B /* ImageViewModel.swift */; };
+		00A5525B275717B9005FDB9B /* FlavorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A5525A275717B9005FDB9B /* FlavorViewModel.swift */; };
 		00A9B1142756276B005B7158 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A9B1122756276B005B7158 /* DetailViewController.swift */; };
 		00A9B1152756276B005B7158 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00A9B1132756276B005B7158 /* DetailViewController.xib */; };
+		00AA2A5E2757B9AA0028E077 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AA2A5D2757B9AA0028E077 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +34,10 @@
 		00A4357F2754C74D00915F7C /* Flavor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flavor.swift; sourceTree = "<group>"; };
 		00A55256275716F9005FDB9B /* FlavorImageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavorImageInfo.swift; sourceTree = "<group>"; };
 		00A552582757174F005FDB9B /* FlavorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavorCell.swift; sourceTree = "<group>"; };
-		00A5525A275717B9005FDB9B /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		00A5525A275717B9005FDB9B /* FlavorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavorViewModel.swift; sourceTree = "<group>"; };
 		00A9B1122756276B005B7158 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		00A9B1132756276B005B7158 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		00AA2A5D2757B9AA0028E077 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,13 +70,14 @@
 		005E72F62754B414006765F1 /* MyPick31-prototype */ = {
 			isa = PBXGroup;
 			children = (
+				00AA2A5D2757B9AA0028E077 /* UIViewControllerExtension.swift */,
 				005E72F72754B414006765F1 /* AppDelegate.swift */,
 				005E72F92754B414006765F1 /* SceneDelegate.swift */,
 				005E72FB2754B414006765F1 /* ViewController.swift */,
 				00A4357F2754C74D00915F7C /* Flavor.swift */,
 				00A55256275716F9005FDB9B /* FlavorImageInfo.swift */,
 				00A552582757174F005FDB9B /* FlavorCell.swift */,
-				00A5525A275717B9005FDB9B /* ImageViewModel.swift */,
+				00A5525A275717B9005FDB9B /* FlavorViewModel.swift */,
 				005E73002754B416006765F1 /* Assets.xcassets */,
 				005E72FD2754B414006765F1 /* Main.storyboard */,
 				005E73022754B416006765F1 /* LaunchScreen.storyboard */,
@@ -159,11 +162,12 @@
 			files = (
 				005E72FC2754B414006765F1 /* ViewController.swift in Sources */,
 				00A552592757174F005FDB9B /* FlavorCell.swift in Sources */,
+				00AA2A5E2757B9AA0028E077 /* UIViewControllerExtension.swift in Sources */,
 				00A55257275716FA005FDB9B /* FlavorImageInfo.swift in Sources */,
 				00A435802754C74D00915F7C /* Flavor.swift in Sources */,
 				00A9B1142756276B005B7158 /* DetailViewController.swift in Sources */,
 				005E72F82754B414006765F1 /* AppDelegate.swift in Sources */,
-				00A5525B275717B9005FDB9B /* ImageViewModel.swift in Sources */,
+				00A5525B275717B9005FDB9B /* FlavorViewModel.swift in Sources */,
 				005E72FA2754B414006765F1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

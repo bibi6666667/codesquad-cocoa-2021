@@ -9,22 +9,35 @@ import Foundation
 
 class Flavor {
     
-    let id: Int
-    let nameKR: String
-    let nameEN: String
-    let base: String
-    let topping: String
-    let syrup: String
-    let image: String
+    var id: Int
+    var nameKR: String
+    var nameEN: String
+    var base: String
+    var topping: String
+    var syrup: String
+    var kcal: Int
+    var allergen: String
     
-    init(id: Int, nameKR: String, nameEN: String, base: String, topping: String, syrup: String, image: String) {
+    init() {
+        self.id = 0
+        self.nameKR = ""
+        self.nameEN = ""
+        self.base = ""
+        self.topping = ""
+        self.syrup = ""
+        self.kcal = 0
+        self.allergen = ""
+    }
+    
+    init(id: Int, nameKR: String, nameEN: String, base: String, topping: String, syrup: String, kcal: Int, allergen: String) {
         self.id = id
         self.nameKR = nameKR
         self.nameEN = nameEN
         self.base = base
         self.topping = topping
         self.syrup = syrup
-        self.image = image
+        self.kcal = kcal
+        self.allergen = allergen
     }
     
 }

@@ -83,8 +83,6 @@
                                             <outlet property="image" destination="ESb-Y3-nrO" id="TpO-5N-uJt"/>
                                             <outlet property="nameEN" destination="zxP-Vb-X6S" id="H22-qp-CNu"/>
                                             <outlet property="nameKR" destination="1lP-29-NAs" id="6Y8-pg-13q"/>
-                                            <outlet property="onSaleOrNot" destination="NL4-sF-4AA" id="gf4-1o-PPU"/>
-                                            <outlet property="signatureOrSeason" destination="1Jh-LG-C62" id="1Nw-YW-xIY"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>

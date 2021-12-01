@@ -16,10 +16,10 @@ class ViewController: UIViewController,
     // 컬렉션뷰에 델리게이트랑 데이터소스가 필요함.
     
     
-    let imageViewModel = ImageViewModel() // 뷰모델 변수 추가
+    let flavorViewModel = FlavorViewModel() // 뷰모델 변수 추가
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return imageViewModel.countOfImageList // 뷰모델에서 카운트 가져옴
+        return flavorViewModel.countOfImageList // 뷰모델에서 카운트 가져옴
     } // 컬렉션 뷰에 총 몇 개의 셀을 표시할 것인지
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -31,9 +31,9 @@ class ViewController: UIViewController,
         // for: 셀의 위치를 지정하는 인덱스 경로 - 데이터 원본 개체의 인덱스 경로 지정
         // "cell" : 스토리보드에서 추가한 테이블 뷰셀의 identifier를 적음
         
-        let flavorImageInfo = imageViewModel.imageInfo(at: indexPath.item)
+        let flavorImageInfo = flavorViewModel.imageInfo(at: indexPath.item)
         // indexPath.item 기준으로 뷰모델에서 ImageInfo를 가져옴
-        cell.update(info: flavorImageInfo) // 해당 셀을 업데이트
+        cell.updateImage(info: flavorImageInfo) // 해당 셀을 업데이트
         return cell
     }
     
@@ -54,6 +54,7 @@ class ViewController: UIViewController,
         // UICollectionViewDataSource를 채택했기 때문에 가능
         self.flavorCollectionView.delegate = self
         // UICollectionViewDelegate를 채택했기 때문에 가능
+        flavorViewModel.setFlavorInfo()
     }
     
 }
