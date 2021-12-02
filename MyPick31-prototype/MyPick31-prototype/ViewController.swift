@@ -13,12 +13,28 @@ class ViewController: UIViewController,
                       UICollectionViewDelegate { // 컬렉션뷰를 어떻게 보여줄 것인지
     
     @IBOutlet weak var flavorCollectionView: UICollectionView!
-    // 컬렉션뷰에 델리게이트랑 데이터소스가 필요함.
+    // 컬렉션뷰는 델리게이트랑 데이터소스가 필요함.
+    @IBOutlet weak var searchField: UITextField!
+    @IBOutlet weak var searchButton: UIButton!
     
     var flavorToSend = Flavor()
     var imageToSend = UIImage()
     
+    var searchedCount: Int = 0
+    
     let flavorViewModel = FlavorViewModel() // 뷰모델 변수 추가
+    
+    @IBAction func searchButtonTouched(_ sender: Any) {
+        let keyWord = searchField.text ?? ""
+        print(keyWord)
+        let results = flavorViewModel.findFlavorByName(name: keyWord)
+        print(results.map{$0.nameKR})
+        print(results.map{$0.nameEN})
+        flavorViewModel.flavorList = results
+        flavorCollectionView.reloadData()
+    }
+    
+    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return flavorViewModel.countOfImageList // 뷰모델에서 카운트 가져옴

@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7yg-Sl-c9h">
-                                <rect key="frame" x="15" y="109" width="360" height="701"/>
+                                <rect key="frame" x="15" y="134" width="360" height="676"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TGz-cP-8pe">
                                     <size key="itemSize" width="180" height="250"/>
@@ -37,9 +37,8 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ESb-Y3-nrO">
                                                     <rect key="frame" x="0.0" y="0.0" width="180" height="200"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="시그니처" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Jh-LG-C62">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시그니처" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Jh-LG-C62">
                                                     <rect key="frame" x="8" y="8" width="52" height="18"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" red="0.40226724584537632" green="0.7803921568627451" blue="0.41434988963581859" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
@@ -73,6 +72,8 @@
                                                 <constraint firstItem="ESb-Y3-nrO" firstAttribute="top" secondItem="h4s-yR-Cd4" secondAttribute="top" id="bLM-i8-3hK"/>
                                                 <constraint firstAttribute="bottom" secondItem="zxP-Vb-X6S" secondAttribute="bottom" constant="5" id="d6Q-lG-utE"/>
                                                 <constraint firstItem="1lP-29-NAs" firstAttribute="centerX" secondItem="h4s-yR-Cd4" secondAttribute="centerX" id="dTn-Jb-OW5"/>
+                                                <constraint firstItem="1Jh-LG-C62" firstAttribute="leading" secondItem="h4s-yR-Cd4" secondAttribute="leading" constant="8" id="k3a-uD-5gC"/>
+                                                <constraint firstItem="1Jh-LG-C62" firstAttribute="top" secondItem="h4s-yR-Cd4" secondAttribute="top" constant="8" id="mLa-ei-PUs"/>
                                                 <constraint firstItem="zxP-Vb-X6S" firstAttribute="centerX" secondItem="h4s-yR-Cd4" secondAttribute="centerX" id="oRK-2w-NmW"/>
                                                 <constraint firstAttribute="trailing" secondItem="ESb-Y3-nrO" secondAttribute="trailing" id="otQ-Ga-6wA"/>
                                                 <constraint firstItem="NL4-sF-4AA" firstAttribute="top" secondItem="h4s-yR-Cd4" secondAttribute="top" constant="8" id="tFs-ZM-c54"/>
@@ -94,11 +95,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ytU-BS-54X">
+                                <rect key="frame" x="33" y="91" width="280" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvM-FH-NDB">
+                                <rect key="frame" x="321" y="91" width="45" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="🔎" titleAlignment="center"/>
+                                <connections>
+                                    <action selector="searchButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kJM-qz-dYW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7yg-Sl-c9h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="7bY-s7-1mx"/>
+                            <constraint firstItem="7yg-Sl-c9h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="7bY-s7-1mx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7yg-Sl-c9h" secondAttribute="trailing" constant="15" id="jo5-4Q-r9v"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7yg-Sl-c9h" secondAttribute="bottom" id="sEl-Dl-ImO"/>
                             <constraint firstItem="7yg-Sl-c9h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="yDj-ou-oOT"/>
@@ -106,6 +122,8 @@
                     </view>
                     <connections>
                         <outlet property="flavorCollectionView" destination="7yg-Sl-c9h" id="eCT-qL-r8F"/>
+                        <outlet property="searchButton" destination="gvM-FH-NDB" id="r4B-bD-Lhc"/>
+                        <outlet property="searchField" destination="ytU-BS-54X" id="uuQ-il-qe5"/>
                         <segue destination="JPE-vs-7uR" kind="show" identifier="DetailSegue" id="l1H-cE-h4v"/>
                     </connections>
                 </viewController>
