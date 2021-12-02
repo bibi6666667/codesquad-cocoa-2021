@@ -23,11 +23,20 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        showCurrentFlavorData(flavor: currentFlavor)
         // Do any additional setup after loading the view.
     }
     
     func setCurrentFlavorData(flavor: Flavor) {
+        currentFlavor = flavor
+    }
+    
+    func setCurrentFlavorImage() {
+        
+    }
+    
+    // DetailViewController 준비할 때? flavor 넣어주기
+    func showCurrentFlavorData(flavor: Flavor) {
         nameKR.text = flavor.nameKR
         nameEN.text = flavor.nameEN
         base.text = "베이스 : \(flavor.base)"
@@ -37,9 +46,7 @@ class DetailViewController: UIViewController {
         allergen.text = "알레르기 성분 : \(flavor.allergen)"
     }
     
-    func setCurrentFlavorImage() {
-        
-    }
+    
 
     // MARK: - Navigation
 
