@@ -51,7 +51,6 @@ class FlavorViewModel {
                     flavor.id = Int(dataArray[i]) ?? 0
                 }
                 if i % 8 == 7 {
-                    print(flavor.id, flavor.nameKR, flavor.nameEN, flavor.base, flavor.topping, flavor.syrup, flavor.kcal, flavor.allergen)
                     flavorList.append(flavor)
                     flavor = Flavor()
                 }

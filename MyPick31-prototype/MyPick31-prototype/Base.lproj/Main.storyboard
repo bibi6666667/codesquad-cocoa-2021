@@ -121,8 +121,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hvp-7R-nKO">
-                                <rect key="frame" x="15" y="15" width="350" height="572"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hvp-7R-nKO">
+                                <rect key="frame" x="20" y="15" width="350" height="572"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sjT-am-4Hc">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="350"/>
@@ -187,6 +187,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BaR-pL-SOU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hvp-7R-nKO" firstAttribute="centerX" secondItem="wXQ-Kb-odX" secondAttribute="centerX" id="QHj-2T-aKo"/>
+                            <constraint firstItem="hvp-7R-nKO" firstAttribute="top" secondItem="BaR-pL-SOU" secondAttribute="top" constant="15" id="h2f-F5-cDc"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MFn-e4-1e2"/>
                     <connections>

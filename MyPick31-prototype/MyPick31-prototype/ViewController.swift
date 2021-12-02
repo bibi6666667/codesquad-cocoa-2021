@@ -53,7 +53,6 @@ class ViewController: UIViewController,
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "DetailSegue" {
             let detailVC = segue.destination as! DetailViewController
-            print(flavorToSend.nameKR, flavorToSend.base)
             detailVC.setCurrentFlavorData(flavor: flavorToSend)
             detailVC.setCurrentFlavorImage(image: imageToSend)
         }
