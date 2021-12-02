@@ -20,10 +20,12 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var allergen: UILabel!
     
     var currentFlavor: Flavor = Flavor()
+    var currentImage: UIImage = UIImage()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         showCurrentFlavorData(flavor: currentFlavor)
+        showCurrentFlavorImage(image: currentImage)
         // Do any additional setup after loading the view.
     }
     
@@ -31,8 +33,8 @@ class DetailViewController: UIViewController {
         currentFlavor = flavor
     }
     
-    func setCurrentFlavorImage() {
-        
+    func setCurrentFlavorImage(image: UIImage) {
+        currentImage = image
     }
     
     // DetailViewController 준비할 때? flavor 넣어주기
@@ -44,6 +46,10 @@ class DetailViewController: UIViewController {
         syrup.text = "시럽 : \(flavor.syrup)"
         kcal.text = "\(flavor.kcal)kcal"
         allergen.text = "알레르기 성분 : \(flavor.allergen)"
+    }
+    
+    func showCurrentFlavorImage(image: UIImage) {
+        self.image.image = image
     }
     
     

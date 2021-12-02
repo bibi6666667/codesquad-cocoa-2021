@@ -16,7 +16,7 @@ class ViewController: UIViewController,
     // 컬렉션뷰에 델리게이트랑 데이터소스가 필요함.
     
     var flavorToSend = Flavor()
-    var currentIndex = 0
+    var imageToSend = UIImage()
     
     let flavorViewModel = FlavorViewModel() // 뷰모델 변수 추가
     
@@ -40,9 +40,9 @@ class ViewController: UIViewController,
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) { // 셀 선택되었을 때 실행 - 상세페이지로 넘어가기
-        print(indexPath.row)
         
         flavorToSend = flavorViewModel.getFlavorWithId(id: indexPath.row)
+        imageToSend = UIImage(named: "\(flavorToSend.nameKR)")!
         
         self.performSegue(withIdentifier: "DetailSegue", sender: self)
         
@@ -55,7 +55,7 @@ class ViewController: UIViewController,
             let detailVC = segue.destination as! DetailViewController
             print(flavorToSend.nameKR, flavorToSend.base)
             detailVC.setCurrentFlavorData(flavor: flavorToSend)
-            
+            detailVC.setCurrentFlavorImage(image: imageToSend)
         }
     }
     
